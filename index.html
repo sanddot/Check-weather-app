@@ -3,24 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Check weather app</title>
+    <title>Check your weather app</title>
   </head>
   <body>
-    <h1>Welcome to my weather app!</h1>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/sanddot" target="_blank">
-          Sandra Domeikiene</a
-        >, is
-        <a href="https://github.com/sanddot/Check-weather-app" target="_blank"
-          >open-sourced on GitHub</a
-        >
-        and
-        <a href="https://check-your-weather-app.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
-      </p>
-    </footer>
+    <div class="container">
+      <header>
+        <form id="enter-city">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            id="search-input"
+            required
+          />
+          <input type="submit" value="Search" class="submit-button" />
+        </form>
+      </header>
+      <main>
+        <h1>Kelowna</h1>
+        <div>
+          <span>Monday 21:15,</span><br />
+          <span>sunny Humidity: 60%,</span><br />
+          <span> Wind: 5km/h</span>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/sanddot" target="_blank">
+            Sandra Domeikiene</a
+          >, is
+          <a href="https://github.com/sanddot/Check-weather-app" target="_blank"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a href="https://check-your-weather-app.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
