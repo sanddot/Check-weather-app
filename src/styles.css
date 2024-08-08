@@ -1,21 +1,19 @@
 body {
-  background: linear-gradient(
-    109.6deg,
-    rgb(170, 195, 216) 11.2%,
-    rgb(225, 234, 238) 100.2%
-  );
+  background-color: rgb(237, 246, 250);
 }
 .weather-app-frame {
   max-width: 600px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
   background: linear-gradient(
     109.6deg,
-    rgb(224, 240, 252) 11.2%,
-    rgb(239, 247, 250) 100.2%
+    rgb(204, 228, 247) 11.2%,
+    rgb(237, 246, 250) 100.2%
   );
   margin: 30px auto;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 30px 50px rgba(116, 98, 157, 0.1);
+  box-shadow: 0 30px 50px rgba(105, 96, 128, 0.2);
 }
 header {
   border-bottom: 1px solid rgba(116, 98, 157, 0.08);
@@ -24,7 +22,7 @@ header {
 footer {
   border-top: 1px solid rgba(116, 98, 157, 0.1);
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .search-city-form {
   margin: 5px auto;
@@ -32,27 +30,31 @@ footer {
 .search-input {
   width: 75%;
   border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   padding: 10px;
   border: none;
-  background-color: rgb(251, 250, 248);
+  background-color: white;
 }
 .submit-button {
   width: 23%;
   border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   padding: 10px;
   margin-left: 5px;
   border: none;
-  background-color: rgb(55, 103, 233);
-  color: white;
+  background-color: white;
+}
+.submit-button:hover {
+  cursor: pointer;
 }
 p {
   line-height: 20px;
-  color: rgb(160, 155, 155);
+  color: rgb(67, 67, 67);
 }
 strong {
-  color: rgb(100, 26, 184);
+  color: rgb(34, 30, 119);
 }
 a {
   color: rgb(55, 103, 233);
@@ -64,7 +66,8 @@ a {
   padding-top: 20px;
 }
 .current-city {
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: 550;
 }
 .current-temperature {
   display: flex;
@@ -76,6 +79,7 @@ a {
 }
 .current-temperature .temperature {
   font-size: 80px;
+  font-weight: 400;
 }
 .current-temperature .celsius {
   font-size: 25px;
