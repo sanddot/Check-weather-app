@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Check your weather app</title>
   </head>
   <body>
-    <div class="container">
+    <div class="weather-app-frame">
       <header>
-        <form id="enter-city">
+        <form class="search-city-form">
           <input
             type="search"
             placeholder="Enter a city..."
+            class="search-input"
             id="search-input"
             required
           />
@@ -19,15 +21,30 @@
         </form>
       </header>
       <main>
-        <div>
-          <h1>Kelowna</h1>
-          <p>
-            <span>Monday 21:15,</span>
-            <span>sunny</span><br />
-            <span>Humidity: 60%,</span>
-            <span> Wind: 5km/h</span>
-          </p>
-          <div>☀️ 25ºC</div>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Kelowna</h1>
+            <p>
+              <span class="current-date" id="current-date">Monday 21:15,</span>
+              <span class="current-precipitation" id="current-precipitation"
+                >sunny</span
+              >
+              <br />
+              Humidity:
+              <span class="current-humidity" id="current=humidity"
+                ><strong>60</strong></span
+              ><strong>%,</strong>
+              Wind:
+              <span class="current-wind" id="current-wind"
+                ><strong>5</strong></span
+              ><strong> km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <div class="emoji">🌥️</div>
+            <div class="temperature">25</div>
+            <div class="celsius">ºC</div>
+          </div>
         </div>
       </main>
       <footer>
