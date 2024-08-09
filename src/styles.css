@@ -53,9 +53,6 @@ p {
   line-height: 20px;
   color: rgb(67, 67, 67);
 }
-strong {
-  color: rgb(34, 30, 119);
-}
 a {
   color: rgb(55, 103, 233);
 }
@@ -66,22 +63,27 @@ a {
   padding-top: 20px;
 }
 .current-city {
-  font-size: 60px;
-  font-weight: 550;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 68px;
+  margin: 0;
+}
+.current-weather-details strong {
+  color: rgb(34, 30, 119);
 }
 .current-temperature {
   display: flex;
 }
 .current-temperature .emoji {
   font-size: 35px;
-  padding-top: 20px;
+  margin-top: 20px;
   margin-right: 10px;
 }
 .current-temperature .temperature {
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 450;
 }
 .current-temperature .celsius {
   font-size: 25px;
-  padding-top: 10px;
+  margin-top: 14px;
 }
