@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Check your weather app</title>
   </head>
   <body>
@@ -29,7 +30,7 @@
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city" id="current-city">Paris</h1>
+            <h1 class="current-city" id="current-city"></h1>
             <p class="current-weather-details">
               <span class="current-date" id="current-date">Monday 21:15,</span>
               <span class="current-precipitation" id="current-precipitation"
@@ -47,9 +48,9 @@
             </p>
           </div>
           <div class="current-temperature">
-            <div class="emoji">🌥️</div>
-            <div class="temperature">25</div>
-            <div class="celsius">ºC</div>
+            <div class="emoji" id="emoji">🌥️</div>
+            <div class="temperature" id="temperature"></div>
+            <div class="celsius" id="celsius">ºC</div>
           </div>
         </div>
       </main>
