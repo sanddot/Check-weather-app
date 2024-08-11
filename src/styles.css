@@ -63,8 +63,8 @@ a {
   padding-top: 20px;
 }
 .current-city {
-  font-size: 48px;
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 600;
   line-height: 68px;
   margin: 0;
 }
@@ -75,15 +75,15 @@ a {
   display: flex;
 }
 .current-temperature .emoji {
-  font-size: 35px;
-  margin-top: 20px;
-  margin-right: 10px;
+  width: 80px;
+  height: 80px;
 }
 .current-temperature .temperature {
   font-size: 80px;
+  line-height: 80px;
   font-weight: 450;
 }
 .current-temperature .celsius {
   font-size: 25px;
-  margin-top: 14px;
+  margin-top: 6px;
 }
