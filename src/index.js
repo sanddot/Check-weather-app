@@ -2,14 +2,13 @@ function updateWeather(response) {
   let currentTemperature = document.querySelector("#temperature");
   let responseTemperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#current-city");
-  let timeElement = document.querySelector("#current-date");
-  let date = new Date(response.data.time * 1000);
   let precipitationElement = document.querySelector("#current-precipitation");
   let humidityElement = document.querySelector("#current-humidity");
   let windElement = document.querySelector("#current-wind");
   let emojiElement = document.querySelector("#emoji");
-
-  console.log(response.data);
+  let timeElement = document.querySelector("#current-date");
+  let date = new Date(response.data.time * 1000);
+  //not picking up time for input value location. Showing current time at my location. ???
 
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
