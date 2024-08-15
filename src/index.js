@@ -17,6 +17,7 @@ function updateWeather(response) {
   windElement.innerHTML = response.data.wind.speed;
   emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}"class="emoji"/>`;
   currentTemperature.innerHTML = responseTemperature;
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -50,7 +51,12 @@ function search(event) {
   let searchInputElement = document.querySelector("#search-input");
   searchCity(searchInputElement.value);
 }
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "t3f3af9b184481d0306edc82cbo6ff8c";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+function displayForecast(response) {
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
   let forecastHtml = "";
 
@@ -78,4 +84,3 @@ let enterCityForm = document.querySelector("#search-city-form");
 enterCityForm.addEventListener("submit", search);
 
 searchCity("Kelowna");
-displayForecast();
