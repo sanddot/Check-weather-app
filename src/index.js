@@ -50,7 +50,32 @@ function search(event) {
   let searchInputElement = document.querySelector("#search-input");
   searchCity(searchInputElement.value);
 }
+function displayForecast() {
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  let forecastHtml = "";
+
+  days.forEach(function (dayOfWeek) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="forecast-day">
+      <div class="day-of-week">${dayOfWeek}</div>
+      <div class="day-emoji">🌤️</div>
+      <div class="temperature-wrapping">
+        <div class="day-high-temperature">
+          <strong>25</strong>
+          <span>º</span>
+        </div>
+        <div class="day-low-temperature">
+          10<span>º</span>
+        </div>
+      </div>
+    </div>`;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
 let enterCityForm = document.querySelector("#search-city-form");
 enterCityForm.addEventListener("submit", search);
 
 searchCity("Kelowna");
+displayForecast();
