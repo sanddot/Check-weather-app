@@ -89,7 +89,7 @@ a {
 }
 .five-day-forecast {
   display: flex;
-  line-height: 35px;
+  line-height: 25px;
   justify-content: space-between;
   margin-top: 20px;
 }
@@ -98,17 +98,13 @@ a {
   color: rgb(67, 67, 67);
 }
 .day-emoji {
-  text-align: center;
-  font-size: 30px;
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
 }
 .temperature-wrapping {
-  text-align: center;
   display: flex;
+  justify-content: space-between;
   color: rgb(34, 30, 119);
-}
-.day-high-temperature {
-  padding: 0 5px;
-}
-.day-low-temperature {
-  padding: 0 5px;
 }
