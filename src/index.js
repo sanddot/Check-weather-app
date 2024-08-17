@@ -8,13 +8,12 @@ function updateWeather(response) {
   let emojiElement = document.querySelector("#emoji");
   let timeElement = document.querySelector("#current-date");
   let date = new Date(response.data.time * 1000);
-  //not picking up time for input value location. Showing current time at my location. ???
 
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   precipitationElement.innerHTML = response.data.condition.description;
-  humidityElement.innerHTML = response.data.temperature.humidity;
-  windElement.innerHTML = response.data.wind.speed;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  windElement.innerHTML = `${response.data.wind.speed} km/h`;
   emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}"class="emoji"/>`;
   currentTemperature.innerHTML = responseTemperature;
   getForecast(response.data.city);

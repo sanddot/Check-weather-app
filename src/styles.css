@@ -16,7 +16,7 @@ body {
   box-shadow: 0 30px 50px rgba(105, 96, 128, 0.2);
 }
 header {
-  border-bottom: 1px solid rgba(116, 98, 157, 0.08);
+  border-bottom: 1px solid rgba(116, 98, 157, 0.1);
   padding-bottom: 20px;
 }
 footer {
