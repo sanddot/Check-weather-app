@@ -113,6 +113,9 @@ a {
     margin: 5px;
     font-size: 13px;
   }
+  .current-weather-details {
+    font-size: 12px;
+  }
   .search-input {
     font-size: 13px;
   }
