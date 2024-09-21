@@ -2,7 +2,7 @@ body {
   background-color: rgb(237, 246, 250);
 }
 .weather-app-frame {
-  max-width: 576px;
+  max-width: 600px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   background: linear-gradient(
@@ -110,20 +110,22 @@ a {
 }
 @media (max-width: 576px) {
   .weather-app-frame {
-    margin: 10px;
+    margin: 5px;
   }
-
+  .current-city {
+    font-size: 34px;
+  }
   .current-temperature .emoji {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
   .current-temperature .temperature {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 40px;
     font-weight: 500;
   }
   .current-temperature .celsius {
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 0;
   }
 }
